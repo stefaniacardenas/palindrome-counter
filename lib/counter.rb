@@ -28,3 +28,10 @@ def title
 	puts "Palindrome counter test".upcase
 	puts "=====" * 5
 end
+
+def output(file_path)
+	puts "File checked: #{file_path}"
+	puts "Range: #{first_line(file_path)}..#{last_line(file_path)}"
+	puts "Palindromes: #{palindromes_count(file_path)}"
+	puts "--------" * 5
+end
