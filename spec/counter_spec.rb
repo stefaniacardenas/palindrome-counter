@@ -15,4 +15,8 @@ describe 'Palindrome counter' do
 		expect(my_array('test_files/example.txt').last).to eq last_line('test_files/example.txt')  
 	end
 
+	it "counts the palindrome numbers" do
+		expect(palindromes_count('test_files/example.txt')).to eq 18
+	end
+
 end
