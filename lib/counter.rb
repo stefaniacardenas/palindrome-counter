@@ -22,7 +22,7 @@ def palindromes_count(file_path)
 	palindromes.count
 end
 
-# Printing the output
+# Output methods
 
 def title
 	puts "Palindrome counter test".upcase
@@ -40,3 +40,12 @@ def footer
 	puts "Thanks for your time and attention."
 	puts "Author:\n Stefania Ferullo Cardenas"
 end
+
+# Printing the output
+
+title
+output('test_files/another-test.txt')
+output('test_files/example.txt')
+output('test_files/test-1.txt')
+output('test_files/test-2.txt')
+footer
