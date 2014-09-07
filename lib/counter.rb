@@ -21,3 +21,10 @@ def palindromes_count(file_path)
 	palindromes = my_array(file_path).select {| number | number.to_s.reverse == number.to_s }
 	palindromes.count
 end
+
+# Printing the output
+
+def title
+	puts "Palindrome counter test".upcase
+	puts "=====" * 5
+end
