@@ -1,4 +1,5 @@
 #!/usr/bin/env ruby 
+require 'pathname'
 
 def first_line(file_path)
 	lines = IO.readlines(file_path)
@@ -44,8 +45,6 @@ end
 # Printing the output
 
 title
-output('test_files/another-test.txt')
-output('test_files/example.txt')
-output('test_files/test-1.txt')
-output('test_files/test-2.txt')
+p = Pathname.new("test_files")
+p.each_child(false) {|file| output("test_files/#{file}") }
 footer
