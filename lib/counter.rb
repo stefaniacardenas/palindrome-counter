@@ -35,3 +35,8 @@ def output(file_path)
 	puts "Palindromes: #{palindromes_count(file_path)}"
 	puts "--------" * 5
 end
+
+def footer
+	puts "Thanks for your time and attention."
+	puts "Author:\n Stefania Ferullo Cardenas"
+end
